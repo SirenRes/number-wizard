@@ -215,14 +215,15 @@ _)      \.___.,|     .'
     def settings(ctx):
         ctx.dif = input("Select the difficulty:\n1-) Easy\nn2-) Normal\n3-) Hard\n")
         if ctx.dif == "1":
-            print("Difficulty is set by default.")
+            Menu.difficulty = "Easy"
+            print("Difficulty is set to Normal.")
             ctx.res()
         elif ctx.dif == "2":
-            Menu.difficulty = "Orta"
+            Menu.difficulty = "Normal"
             print("Difficulty is set to Normal.")
             ctx.res()
         elif ctx.dif == "3":
-            Menu.difficulty = "Zor"
+            Menu.difficulty = "Hard"
             print("Difficulty is set to Hard.")
             ctx.res()
         else:
